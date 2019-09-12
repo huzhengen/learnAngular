@@ -10,6 +10,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { CartComponent } from './cart/cart.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
    imports: [
@@ -19,6 +20,7 @@ import { CartComponent } from './cart/cart.component';
       RouterModule.forRoot([
          { path: '', component: ProductListComponent },
          { path: 'cart', component: CartComponent },
+         { path: 'shipping', component: ShippingComponent },
          { path: 'products/:productId', component: ProductDetailsComponent },
        ])
    ],
@@ -28,7 +30,8 @@ import { CartComponent } from './cart/cart.component';
       TopBarComponent,
       ProductAlertsComponent,
       ProductDetailsComponent,
-      CartComponent
+      CartComponent,
+      ShippingComponent
    ],
    providers: [],
    bootstrap: [
