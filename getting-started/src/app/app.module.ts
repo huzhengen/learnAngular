@@ -14,6 +14,7 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { TourOfHeroesComponent } from './tour-of-heroes/tour-of-heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroMessagesComponent } from './hero-messages/hero-messages.component';
 
 @NgModule({
    imports: [
@@ -38,7 +39,8 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
       CartComponent,
       ShippingComponent,
       TourOfHeroesComponent,
-      HeroDetailComponent
+      HeroDetailComponent,
+      HeroMessagesComponent
    ],
    providers: [],
    bootstrap: [
