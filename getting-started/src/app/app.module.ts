@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -11,10 +12,12 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { TourOfHeroesComponent } from './tour-of-heroes/tour-of-heroes.component';
 
 @NgModule({
    imports: [
       BrowserModule,
+      FormsModule,
       HttpClientModule,
       ReactiveFormsModule,
       RouterModule.forRoot([
@@ -22,6 +25,7 @@ import { ShippingComponent } from './shipping/shipping.component';
          { path: 'cart', component: CartComponent },
          { path: 'shipping', component: ShippingComponent },
          { path: 'products/:productId', component: ProductDetailsComponent },
+         { path: 'heroes', component: TourOfHeroesComponent },
        ])
    ],
    declarations: [
@@ -31,7 +35,8 @@ import { ShippingComponent } from './shipping/shipping.component';
       ProductAlertsComponent,
       ProductDetailsComponent,
       CartComponent,
-      ShippingComponent
+      ShippingComponent,
+      TourOfHeroesComponent
    ],
    providers: [],
    bootstrap: [
