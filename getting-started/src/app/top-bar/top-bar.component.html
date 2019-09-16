@@ -1,7 +1,11 @@
 <a [routerLink]="['/']">
     <h1>My Store</h1>
 </a>
-<a [routerLink]="['/heroes']" style="color: #fff;">Tour of Heroes</a>
+
+<nav>
+    <a routerLink="/dashboard" style="color: #fff;margin-right: 20px;">Dashboard</a>
+    <a routerLink="/heroes" style="color: #fff;">Heroes</a>
+</nav>
 
 <a [routerLink]="['/cart']" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
 

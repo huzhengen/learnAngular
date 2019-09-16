@@ -15,6 +15,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { TourOfHeroesComponent } from './tour-of-heroes/tour-of-heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroMessagesComponent } from './hero-messages/hero-messages.component';
+import { HeroDashboardComponent } from './hero-dashboard/hero-dashboard.component';
 
 @NgModule({
    imports: [
@@ -28,6 +29,7 @@ import { HeroMessagesComponent } from './hero-messages/hero-messages.component';
          { path: 'shipping', component: ShippingComponent },
          { path: 'products/:productId', component: ProductDetailsComponent },
          { path: 'heroes', component: TourOfHeroesComponent },
+         { path: 'dashboard', component: HeroDashboardComponent },
        ])
    ],
    declarations: [
@@ -40,7 +42,8 @@ import { HeroMessagesComponent } from './hero-messages/hero-messages.component';
       ShippingComponent,
       TourOfHeroesComponent,
       HeroDetailComponent,
-      HeroMessagesComponent
+      HeroMessagesComponent,
+      HeroDashboardComponent
    ],
    providers: [],
    bootstrap: [
