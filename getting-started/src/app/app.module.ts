@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -22,6 +24,13 @@ import { HeroDashboardComponent } from './hero-dashboard/hero-dashboard.componen
       BrowserModule,
       FormsModule,
       HttpClientModule,
+      HttpClientInMemoryWebApiModule,
+      // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+      // and returns simulated server responses.
+      // Remove it when a real server is ready to receive requests.
+      HttpClientInMemoryWebApiModule.forRoot(
+         InMemoryDataService, { dataEncapsulation: false }
+      ),
       ReactiveFormsModule,
       RouterModule.forRoot([
          { path: '', component: ProductListComponent },
@@ -31,7 +40,7 @@ import { HeroDashboardComponent } from './hero-dashboard/hero-dashboard.componen
          { path: 'heroes', component: TourOfHeroesComponent },
          { path: 'hero/:id', component: HeroDetailComponent },
          { path: 'dashboard', component: HeroDashboardComponent },
-       ])
+      ])
    ],
    declarations: [
       AppComponent,
