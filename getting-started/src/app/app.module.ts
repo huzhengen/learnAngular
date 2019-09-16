@@ -13,6 +13,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { TourOfHeroesComponent } from './tour-of-heroes/tour-of-heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
    imports: [
@@ -36,7 +37,8 @@ import { TourOfHeroesComponent } from './tour-of-heroes/tour-of-heroes.component
       ProductDetailsComponent,
       CartComponent,
       ShippingComponent,
-      TourOfHeroesComponent
+      TourOfHeroesComponent,
+      HeroDetailComponent
    ],
    providers: [],
    bootstrap: [
