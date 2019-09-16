@@ -29,6 +29,7 @@ import { HeroDashboardComponent } from './hero-dashboard/hero-dashboard.componen
          { path: 'shipping', component: ShippingComponent },
          { path: 'products/:productId', component: ProductDetailsComponent },
          { path: 'heroes', component: TourOfHeroesComponent },
+         { path: 'hero/:id', component: HeroDetailComponent },
          { path: 'dashboard', component: HeroDashboardComponent },
        ])
    ],

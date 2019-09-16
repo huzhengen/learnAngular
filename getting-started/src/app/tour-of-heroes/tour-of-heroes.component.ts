@@ -11,12 +11,12 @@ import { HeroService } from '../hero.service';
 export class TourOfHeroesComponent implements OnInit {
   heroes: Hero[];
 
-  selectedHero: Hero;
+  // selectedHero: Hero;
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    console.log(this.selectedHero);
-  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  //   console.log(this.selectedHero);
+  // }
 
   constructor(private heroService: HeroService ) { }
 

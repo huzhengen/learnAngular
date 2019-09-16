@@ -56,6 +56,10 @@ button {
     display: flex;
 }
 
+.heroes li a {
+    display: flex;
+}
+
 .heroes li.selected:hover {
     background-color: #BBD8DC !important;
     color: white;
