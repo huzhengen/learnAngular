@@ -90,3 +90,13 @@ button {
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
 }
+
+button.add {
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+label {
+    display: inline;
+}
