@@ -18,6 +18,7 @@ import { TourOfHeroesComponent } from './tour-of-heroes/tour-of-heroes.component
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroMessagesComponent } from './hero-messages/hero-messages.component';
 import { HeroDashboardComponent } from './hero-dashboard/hero-dashboard.component';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
    imports: [
@@ -53,7 +54,8 @@ import { HeroDashboardComponent } from './hero-dashboard/hero-dashboard.componen
       TourOfHeroesComponent,
       HeroDetailComponent,
       HeroMessagesComponent,
-      HeroDashboardComponent
+      HeroDashboardComponent,
+      HeroSearchComponent
    ],
    providers: [],
    bootstrap: [
