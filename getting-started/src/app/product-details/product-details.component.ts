@@ -10,12 +10,17 @@ import { CartService } from '../cart.service';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-  product;
+  product: object;
 
-  constructor(private route: ActivatedRoute, private cartService: CartService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private cartService: CartService
+  ) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
+      console.log(params);
+      console.log(params.get('productId'));
       this.product = products[+params.get('productId')];
     });
   }

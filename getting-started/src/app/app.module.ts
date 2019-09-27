@@ -24,6 +24,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
    imports: [
       BrowserModule,
       FormsModule,
+      // import HttpClientModule after BrowserModule.
       HttpClientModule,
       HttpClientInMemoryWebApiModule,
       // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
