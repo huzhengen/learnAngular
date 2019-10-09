@@ -1,13 +1,25 @@
 <a [routerLink]="['/']">
-    <h1>My Store</h1>
+  <h1>My Store</h1>
 </a>
 
 <nav>
-    <a routerLink="/dashboard" style="color: #fff;margin-right: 20px;">Dashboard</a>
-    <a routerLink="/heroes" style="color: #fff;">Heroes</a>
+  <a routerLink="/dashboard" class="dashboard">Dashboard</a>
+  <a routerLink="/heroes" class="heroes">Heroes</a>
 </nav>
 
-<a [routerLink]="['/cart']" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+<!--<a [routerLink]="['/cart']" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>-->
+<a routerLink="/cart" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+
+<!--https://angular.cn/api/router/RouterLink-->
+
+<!--如果该链接是静态的，你可以使用下列指令： <a routerLink="/user/bob">链接到 user 组件</a>-->
+
+<!--如果你要用动态值来生成该链接，你可以传入一组路径片段，每个片段后面都可以跟一些参数。
+
+比如 ['/team', teamId, 'user', userName, {details: true}] 表示我们要生成一个到 /team/11/user/bob;details=true 的链接。
+
+多个静态片段可以合并为一个（比如 ['/team/11/user', userName, {details: true}]）。-->
+
 
 <!-- e
   Copyright Google LLC. All Rights Reserved.
